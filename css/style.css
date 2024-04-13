@@ -1,3 +1,9 @@
+.menu-desktop { display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    position: relative;
+}
+
 @media only screen and (max-width: 500px) {
     body { background-color: coral; 
         padding-bottom: 50px;}
@@ -15,8 +21,9 @@
 }
 
 @media only screen and (min-width: 961px) {
-    body { background-color:coral };
-   .menu-hamb {display: none;}
+    body { background-color:coral};
+    nav div .menuh {display: none;}
+    .menuh {display: none;}
 }
 
 a{
@@ -42,6 +49,9 @@ h1{
     text-align: center;
     }
 
+.carousel-item {padding: 100px;
+justify-content: center;}
+
 h2{
     font-size: 34px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -52,16 +62,6 @@ h3{
     font-size: 30px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #0b0101;
-}
-
-nav ul li{
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .img-txt {width: 30rem;
@@ -108,5 +108,22 @@ body{flex-wrap: wrap;}
     height: 0;
     overflow: hidden;
 }
-.carousel-item {
-    justify-content: center;}
+
+.calendar{
+    text-align: center;
+}
+
+ol{list-style-type: none;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+padding: 0%;
+border-style: solid;
+border-color: #0b0101;
+border-width: 2px;
+}
+
+.day{
+    background-color:lightgray;
+    font-weight: bold;
+    text-align: center;
+}
